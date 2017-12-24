@@ -1,6 +1,5 @@
 import requests
 
-
 def get_web_page(url):
     resp = requests.get(
         url=url,
@@ -11,7 +10,6 @@ def get_web_page(url):
         return None
     else:
         return resp.text
-
 
 if __name__ == '__main__':
     page = get_web_page('http://www02.eyny.com/home.php?mod=space&uid=3750445&do=thread&view=me&from=space')
